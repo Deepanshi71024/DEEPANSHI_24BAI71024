@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run exp-8 frontend",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"--prefix",
+				"exp-8/frontend",
+				"run",
+				"dev",
+				"--",
+				"--host",
+				"127.0.0.1"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run exp-8 backend",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/d",
+				"/c",
+				"cd /d \"C:\\Users\\DEEPANSHI\\OneDrive\\programs\\FULL STACK PROJECTS\\exp-8\\backend\" && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run exp-9 development server",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"exp-9",
+				"run",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
